@@ -1,0 +1,42 @@
+.navigation-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active{
+    color: goldenrod !important;
+    font-weight: 900;
+}
+.navigation-menu li{
+    margin: 0 20px;
+}
+.navigation-menu li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgb(247, 247, 244);
+    color:darkgreen;
+    /* font-weight: bold; */
+}
+body{
+    font-family: 'roboto',sans-serif;
+}
+
+/* mobile view */
+
+
+.mobile-navigation{
+list-style: none;
+
+}
+.mobile-navigation li{
+margin-top: 20px;
+}
+.mobile-navigation li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+   
+}

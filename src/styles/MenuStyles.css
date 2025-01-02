@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DynaPuff:wght@400..700&family=Flavors&family=Kalnia+Glaze:wght@100..700&family=Rock+Salt&family=Sue+Ellen+Francisco&display=swap');
+
+
+.classic-dhaba-title{
+  font-family: "Caveat Brush", serif;
+}
+
+
+.menu-list {
+    display: grid;
+    margin: 3rem 5rem;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  }
+
+   .card:hover{
+   transition: 0.5s ease-in-out;
+   transform:scale(1.07) translateY(-5px) ;
+
+  }
+  
+  .menu-list .MuiCard-root {
+    height: 100%; /* Ensures all cards have equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .menu-list {
+      grid-template-columns: 1fr 1fr;
+      margin: 3.5rem;
+      gap: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu-list {
+      grid-template-columns: 1fr;
+      margin: 2.5rem 3rem;
+      gap: 3rem;
+    }
+  }
+  

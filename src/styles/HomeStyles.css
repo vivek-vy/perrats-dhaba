@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DynaPuff:wght@400..700&family=Flavors&family=Kalnia+Glaze:wght@100..700&family=Sue+Ellen+Francisco&display=swap');
+
+.home {
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.headerContainer {
+  width: auto;
+  margin-left: 50px;
+ 
+}
+.home .headerContainer h1 {
+  font-weight: bold;
+   font-size: 11vh;
+ 
+  color: black;
+  color:rgb(250, 46, 0);
+  font-family: "Caveat Brush", serif;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+.home .headerContainer p {
+  margin-top: 15px;
+  padding: 0;
+  font-size: xx-large;
+  font-weight: light;
+  color:bisque;
+  font-family: cursive;
+  
+}
+.headerContainer button {
+  background-color: rgb(197, 40, 40);
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  font-family: cursive;
+  font-weight: 600;
+}
+.headerContainer button:hover {
+  background-color: rgb(255, 0, 0);
+  transition: 0.3s ease-in-out;
+  transform:scale(1.1) ;
+  /* width: 300px; */
+  height: 70px;
+}
+.headerContainer button a {
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerContainer {
+    margin-left: 0;
+    border-radius: 10px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(60, 192, 90);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 10px;
+   
+    
+  }
+  .home .headerContainer h1 {
+    font-size: xxx-large;
+    color: rgb(250, 46, 0);
+   
+  }
+  .home .headerContainer p {
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+  .headerContainer button {
+    background-color: rgb(224, 144, 199);
+    color: #dadddf;
+   
+  }
+  .headerContainer button:hover {
+    background-color: rgb(247, 247, 33);
+    color: #f2f3f4;
+  }
+
+  .headerContainer button a {
+    color: #058ef7;
+  }
+}
+
+/* animation  */
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headerContainer {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeSlideUp 1.5s ease-in-out;
+}
+
